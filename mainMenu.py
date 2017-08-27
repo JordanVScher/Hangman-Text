@@ -13,7 +13,7 @@ from CustomWord import *
 
 
 def check_input(x):  # Checks if user input is valid
-    x = x.replace(" ", "")  # Gets rid of spaces
+    x = x.strip()  # Gets rid of spaces
     # Gets only the first char of the input, if it exists
     if not x:
         print(Fore.LIGHTWHITE_EX, "You have to input something!")
@@ -38,7 +38,7 @@ class MainMenu:
         print(Fore.LIGHTGREEN_EX, '4 - Quit')
         userT = input(" Your input:")
         if check_input(userT):
-            userT = userT.replace(" ", "")  # Bypasses spaces
+            userT = userT.strip()  # Bypasses spaces
             user = int(userT[0])
         else:
             print(Fore.LIGHTRED_EX, 'Input Error! Please, try again!\n')
@@ -56,8 +56,10 @@ class MainMenu:
         if user == 3:
             user = 0  # User resets to zero.
             print(Fore.LIGHTCYAN_EX, "\nYou chose Custom Word!")
+            print(Fore.LIGHTCYAN_EX, "\nThis is a two-player game! Input a word and let someone else guess it.")
+
             a = CustomWord()
-            a.playGame()
+            a.play_game()
 
     print(Fore.LIGHTMAGENTA_EX, '\nOK! See you next time! o/')
 
