@@ -3,7 +3,9 @@ from colorama import Fore
 
 class CustomWord(object):
     def playGame(self):
-        word, hint = enterWord()
+       # word, hint = enterWord()
+        word = "Tristero"
+        hint = "We await silent --------'s empire"
         print(Fore.LIGHTYELLOW_EX, "The game is about to start!\n\n")
 
         #GAMELOOP
