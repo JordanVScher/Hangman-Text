@@ -8,8 +8,14 @@ Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 Style: DIM, NORMAL, BRIGHT, RESET_ALL'''
 
 from colorama import init
-from colorama import Fore, Back, Style
+import random
+import sys
+import json
+import os
 from CustomWord import *
+from normalMode import *
+
+
 
 
 def check_input(x):  # Checks if user input is valid
@@ -20,16 +26,29 @@ def check_input(x):  # Checks if user input is valid
         return False
     else:
         x = x[0]
-        if x.isnumeric() and int(x) >= 1 and int(x) <= 4:
+        if x.isnumeric() and int(x) >= 1 and int(x)<= 4:
             return True
         else:
             return False
 
 
+def choose_word():  # returns a dictionary with the word and hints
+    with open('easyWords.json') as data_file:
+        jsondata = json.load(data_file)
+
+    for i in jsondata['cinema']:
+        print(i['word'])
+        #  print(data)
+
+    a = random.choice(jsondata['cinema'])
+    print("O random é:" + a['word'])
+    return a
+
 class MainMenu:
     init()
     print(Fore.LIGHTCYAN_EX, 'Welcome to Hangman\n')
     user = 0
+
     while user is not 4:
         print(Fore.LIGHTYELLOW_EX, '\nMain Menu - enter a number to select game mode')
         print(Fore.LIGHTYELLOW_EX, '1 - Normal Game')
@@ -37,6 +56,7 @@ class MainMenu:
         print(Fore.LIGHTYELLOW_EX, '3 - Custom Word')
         print(Fore.LIGHTGREEN_EX, '4 - Quit')
         userT = input(" Your input:")
+
         if check_input(userT):
             userT = userT.strip()  # Bypasses spaces
             user = int(userT[0])
@@ -45,8 +65,16 @@ class MainMenu:
 
         if user == 1:
             user = 0  # User resets to zero.
+            os.system('cls' if os.name == 'nt' else 'clear')
             print(Fore.LIGHTCYAN_EX, "\nYou chose Normal Mode!")
-            print(Fore.LIGHTCYAN_EX, "Under construction!")
+
+            try:
+                n = NormalMode()
+                n.play_game(choose_word())
+            except:  # catch every exception
+                e = sys.exc_info()[0]
+                print(Fore.LIGHTRED_EX, "Error : %s" % e)
+                print("Check if the json files are in the root with the proper name!")
 
         if user == 2:
             user = 0  # User resets to zero.
@@ -58,8 +86,8 @@ class MainMenu:
             print(Fore.LIGHTCYAN_EX, "\nYou chose Custom Word!")
             print(Fore.LIGHTCYAN_EX, "\nThis is a two-player game! Input a word and let someone else guess it.")
 
-            a = CustomWord()
-            a.play_game()
+            c = CustomWord()
+            c.play_game()
 
     print(Fore.LIGHTMAGENTA_EX, '\nOK! See you next time! o/')
 

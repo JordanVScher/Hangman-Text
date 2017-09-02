@@ -1,0 +1,173 @@
+{
+  "cinema": [
+    {
+      "word": "Star Wars",
+      "hint1": "A very successful movie franchise",
+      "hint2": "The movies spawned comic, books, games and much more."
+    },
+   {
+      "word": "Rocky Balboa",
+      "hint1": "Main character of a movie franchise",
+      "hint2": "Character is a boxer"
+    },
+   {
+      "word": "John Rambo",
+      "hint1": "Main character of a movie franchise",
+      "hint2": "Character is a vietnam veteran "
+    },
+  {
+      "word": "The Godfather",
+      "hint1": "Part of a critically acclaimed trilogy",
+      "hint2": "Based on a novel by Mario Puzo"
+    },
+    {
+      "word": "Toy Story",
+      "hint1": "One of the greatest animated films",
+      "hint2": "Directorial debut of John Lasseter"
+    },
+    {
+      "word": "Avatar",
+      "hint1": "Highest grossing movie of all time",
+      "hint2": "Well-known for it's special effects"
+    },
+    {
+      "word": "Titanic",
+      "hint1": "2nd highest grossing movie of all time",
+      "hint2": "Based on a real-life tragedy"
+    },
+    {
+      "word": "Harry Potter",
+      "hint1": "Name of the franchise is the name of the main character",
+      "hint2": "Based on a novel book series"
+    },
+    {
+      "word": "Jurassic Park",
+      "hint1": "First film of a franchise",
+      "hint2": "Based on a novel by Michael Crichton"
+    },
+    {
+      "word": "Pirates of the Caribbean",
+      "hint1": "A movie franchise",
+      "hint2": "Based on a theme park ride of the same name"
+    },
+    {
+      "word": "The Lord of the Rings",
+      "hint1": "A movie trilogy",
+      "hint2": "Based on the works of J. R. R. Tolkien"
+    },
+      {
+      "word": "The Lion King",
+      "hint1": "One of the greatest animated films",
+      "hint2": "Influenced by William Shakespeare's Hamlet."
+    },
+      {
+      "word": "Back to the Future",
+      "hint1": "First film of a franchise",
+      "hint2": "Stars: Michael J. Fox and Christopher Lloyd"
+    },
+      {
+      "word": "Ghostbusters",
+      "hint1": "First film of a franchise",
+      "hint2": "Stars Bill Murray"
+    },
+      {
+      "word": "The Shawshank Redemption",
+      "hint1": "Acclaimed film from 1994",
+      "hint2": "Based on a story by Stephen King"
+    },
+    {
+      "word": "The Good, the Bad and the Ugly",
+      "hint1": "Last film of a trilogy",
+      "hint2": "Stars Clint Eastwood, Eli Wallach, Lee Van Cleef"
+    },
+    {
+      "word": "Pulp Fiction",
+      "hint1": "Acclaimed film from 1994",
+      "hint2": "Stars: John Travolta, Uma Thurman, Samuel L. Jackson "
+    },
+    {
+      "word": "Inception",
+      "hint1": "Movie from 2010",
+      "hint2": "Stars: Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page "
+    },
+    {
+      "word": "Forrest Gump",
+      "hint1": "Acclaimed film from 1994",
+      "hint2": "'Life was like a box of chocolates. You never know what you're gonna get.'"
+    },
+    {
+      "word": "One Flew Over the Cuckoo's Nest",
+      "hint1": "Acclaimed film from 1975",
+      "hint2": "Based on a novel by Ken Kesey"
+    },
+    {
+      "word": "Saving Private Ryan",
+      "hint1": "Acclaimed film from 1998",
+      "hint2": "Stars: Tom Hanks, Matt Damon, Tom Sizemore "
+    },
+    {
+      "word": "The Silence of the Lambs",
+      "hint1": "The first Best Picture winner to be a horror film",
+      "hint2": "Stars: Jodie Foster, Anthony Hopkins, Lawrence A. Bonney"
+    },
+    {
+      "word": "Apocalypse Now ",
+      "hint1": "Acclaimed film from 1979",
+      "hint2": "Stars: Martin Sheen, Marlon Brando, Robert Duvall"
+    },
+    {
+      "word": "Life Is Beautiful",
+      "hint1": "Controversial italian film from 1997",
+      "hint2": "Roberto Benigni's most well-known work"
+    },
+    {
+      "word": "Rear Window",
+      "hint1": "Acclaimed thriller from 1954",
+      "hint2": "Stars: James Stewart, Grace Kelly, Wendell Corey "
+    },
+    {
+      "word": "Casablanca",
+      "hint1": "A classic from 1942",
+      "hint2": "Play it, Sam. Play 'As Time Goes By'"
+    },
+    {
+      "word": "Alfred Hitchcock",
+      "hint1": "Considered one of the greatest directors",
+      "hint2": "Know for his thrillers and TV show"
+    },
+    {
+      "word": "Raiders of the Lost Ark",
+      "hint1": "A hit from 1981",
+      "hint2": "Hero is scared of snakes"
+    },
+    {
+      "word": "Indiana Jones and the Last Crusade",
+      "hint1": "A hit from 1989",
+      "hint2": "'Only the penitent man will pass'"
+    },
+    {
+      "word": "Charles Chaplin",
+      "hint1": "One of the best-known figures in the world",
+      "hint2": "Best known for his Tramp character"
+    },
+    {
+      "word": "The Shining",
+      "hint1": "A horror film from 1980",
+      "hint2": "All work and no play makes Jack a dull boy"
+    },
+    {
+      "word": "Once Upon a Time in America ",
+      "hint1": "A crime film from 1984",
+      "hint2": "Stars: Robert De Niro, James Woods, Elizabeth McGovern "
+    },
+    {
+      "word": "Citizen Kane",
+      "hint1": "A classic from 1941",
+      "hint2": "Considered one of the best films of all time"
+    }
+
+
+
+
+  ]
+}
