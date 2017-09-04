@@ -1,6 +1,5 @@
 from colorama import Fore
 
-
 class NormalMode(object):
     def play_game(self, secret_word):
 
@@ -21,12 +20,13 @@ class NormalMode(object):
         print(Fore.LIGHTYELLOW_EX, " The game is about to start!\n\n")
 
         while mistakes is not 5 and not victory:
-            print(Fore.LIGHTYELLOW_EX, "\n\n The hint is: " + secret_word['hint1'] + ".")
+            show_wrong(guesses)
+            show_tries(mistakes)
+
+            print(Fore.LIGHTYELLOW_EX, "\nThe hint is: " + secret_word['hint1'] + ".")
             if mistakes > 3:
                 print(Fore.LIGHTYELLOW_EX, "Another hint: " + secret_word['hint2'] + ".")
 
-            show_wrong(guesses)
-            show_tries(mistakes)
             show_word(player)
 
             try:
@@ -56,8 +56,7 @@ class NormalMode(object):
             print(Fore.LIGHTRED_EX, "\n\nYou lost! Better luck next time!")
             print("The word is " + word.title())
 
-        print("\n>>>Back to Main Menu  三三ᕕ( ⌓̈ )ᕗ\n")
-
+        print("\nGame Over\n")
 
 def player_input():
     print(Fore.LIGHTYELLOW_EX, "\n\nEnter a letter")
