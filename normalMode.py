@@ -1,5 +1,6 @@
 from colorama import Fore
 
+
 class NormalMode(object):
     def play_game(self, secret_word):
 
@@ -8,7 +9,7 @@ class NormalMode(object):
         mistakes = 0  # Number of mistakes. When it reaches 6 it's game over.
         guesses = []  # stores the wrong guesses of the player
         player = []
-        replace = [" ","'","=","-","!",":",",","?",";","(",")"] # replaces these symbols from the word
+        replace = [" ","'","=","-","!",":",",","?",";","(",")","%","#","&"] # replaces these symbols from the word
         for i in word:
             if i in replace:
                 player.append(i)
@@ -17,10 +18,10 @@ class NormalMode(object):
         # player is initialized with as manys "_" as the legth of the word
         victory = False  # marks the player's victory
 
-        print(Fore.LIGHTYELLOW_EX, "The game is about to start!\n\n")
+        print(Fore.LIGHTYELLOW_EX, " The game is about to start!\n\n")
 
         while mistakes is not 5 and not victory:
-            print(Fore.LIGHTYELLOW_EX, "\n\nThe hint is: " + secret_word['hint1'] + ".")
+            print(Fore.LIGHTYELLOW_EX, "\n\n The hint is: " + secret_word['hint1'] + ".")
             if mistakes > 3:
                 print(Fore.LIGHTYELLOW_EX, "Another hint: " + secret_word['hint2'] + ".")
 
@@ -95,3 +96,4 @@ def show_word(player):  # print the players guesses in a nice manner
             print(Fore.LIGHTWHITE_EX, " ", end="")
         else:
             print(Fore.LIGHTWHITE_EX, i, end="")
+

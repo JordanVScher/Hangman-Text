@@ -1,0 +1,26 @@
+{
+  "cinema": [
+    {
+      "word": "The End of Evangelion",
+      "hint1": "Tumbling down, tumbling down, tumbling down",
+      "hint2": "The fate of destruction is also the joy of rebirth"
+    },
+    {
+      "word": "Kiki's Delivery Service",
+      "hint1": "Animation from 1989",
+      "hint2": "Follows a young witch and her black cat"
+    }
+  ],
+  "literature": [
+  {
+      "word": "Infinite Jest",
+      "hint1": "Alas, poor Yorick!",
+      "hint2": "I knew him, Horatio, a fellow of ..."
+  },
+  {
+    "word": "The Autumn of the Patriarch",
+    "hint1": "A less-known novel by a very famous author",
+    "hint2": "Features a lonely dictator and a lot of cows"
+  }
+]
+}

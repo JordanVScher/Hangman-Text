@@ -165,9 +165,17 @@
       "hint1": "A classic from 1941",
       "hint2": "Considered one of the best films of all time"
     }
-
-
-
-
-  ]
+  ],
+  "literature": [
+  {
+      "word": "Mason & Dixon",
+      "hint1": "A postmodern historical novel",
+      "hint2": "Follows the story of an astronomer and a surveyor"
+  },
+  {
+    "word": "Gravity's Rainbow",
+    "hint1": "Considered the greatest postmodern novel",
+    "hint2": "Features rockets, pirates and bananas"
+  }
+]
 }

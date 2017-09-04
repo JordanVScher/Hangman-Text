@@ -7,15 +7,12 @@
 Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 Style: DIM, NORMAL, BRIGHT, RESET_ALL'''
 
-from colorama import init
-import random
+from colorama import *
 import sys
-import json
 import os
 from CustomWord import *
 from normalMode import *
-
-
+from getWords import *
 
 
 def check_input(x):  # Checks if user input is valid
@@ -31,18 +28,6 @@ def check_input(x):  # Checks if user input is valid
         else:
             return False
 
-
-def choose_word():  # returns a dictionary with the word and hints
-    with open('easyWords.json') as data_file:
-        jsondata = json.load(data_file)
-
-    for i in jsondata['cinema']:
-        print(i['word'])
-        #  print(data)
-
-    a = random.choice(jsondata['cinema'])
-    print("O random é:" + a['word'])
-    return a
 
 class MainMenu:
     init()
@@ -70,7 +55,7 @@ class MainMenu:
 
             try:
                 n = NormalMode()
-                n.play_game(choose_word())
+                n.play_game(getWords())
             except:  # catch every exception
                 e = sys.exc_info()[0]
                 print(Fore.LIGHTRED_EX, "Error : %s" % e)
